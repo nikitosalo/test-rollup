@@ -29,8 +29,8 @@ export default {
     dir: 'dist',
   },
   plugins: [
-    linaria(),
-    css({ output: 'styles.css' }),
+    // linaria(),
+    // css({ output: 'styles.css' }),
     commonjs(),
     typescript(),
     terser(),
