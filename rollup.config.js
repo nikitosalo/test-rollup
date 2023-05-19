@@ -5,10 +5,12 @@ import typescript from '@rollup/plugin-typescript';
 
 export default {
   input: 'src/index.tsx',
-  output: {
-    file: 'dist/index.js',
-    format: 'iife',
-    sourcemap: true,
-  },
+  output: [
+    {
+      file: 'dist/index.js',
+      format: 'iife',
+      sourcemap: true,
+    },
+  ],
   plugins: [commonjs(), typescript(), terser(), resolve()],
 };
