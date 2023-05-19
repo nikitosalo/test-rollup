@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { IButton } from './types';
+import { ITestComponent } from './types';
 export declare const classNames: {
     button: import("@linaria/core").LinariaClassName;
 };
-export declare const Button: FC<IButton>;
+export declare const Button: FC<ITestComponent>;
