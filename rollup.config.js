@@ -24,13 +24,5 @@ export default {
     format: 'es',
     dir: 'dist',
   },
-  // input: 'src/index.tsx',
-  // output: [
-  //   {
-  //     file: 'dist/index.js',
-  //     format: 'iife',
-  //     sourcemap: true,
-  //   },
-  // ],
   plugins: [commonjs(), typescript(), terser(), resolve()],
 };
