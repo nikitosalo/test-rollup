@@ -5,6 +5,7 @@ import typescript from '@rollup/plugin-typescript';
 import glob from 'glob';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 export default {
   input: Object.fromEntries(
@@ -24,5 +25,5 @@ export default {
     format: 'es',
     dir: 'dist',
   },
-  plugins: [commonjs(), typescript(), terser(), resolve()],
+  plugins: [commonjs(), typescript(), terser(), resolve(), peerDepsExternal()],
 };
