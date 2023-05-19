@@ -6,6 +6,9 @@ import glob from 'glob';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import linaria from '@linaria/rollup';
+import css from 'rollup-plugin-css-only';
+import babel from '@rollup/plugin-babel';
 
 export default {
   input: Object.fromEntries(
@@ -25,5 +28,14 @@ export default {
     format: 'es',
     dir: 'dist',
   },
-  plugins: [commonjs(), typescript(), terser(), resolve(), peerDepsExternal()],
+  plugins: [
+    commonjs(),
+    typescript(),
+    terser(),
+    resolve(),
+    peerDepsExternal(),
+    linaria(),
+    css(),
+    // babel(),
+  ],
 };
