@@ -1,0 +1,12 @@
+/.git
+/.vscode
+/.idea
+public
+node_modules
+bin
+/src/app/ErrorBoundary.tsx
+/src/shared/theme/
+/src/**/*.stories.tsx
+/src/**/styled.ts
+/src/**/style.ts
+rollup.config.js
