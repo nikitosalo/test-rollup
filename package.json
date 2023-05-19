@@ -2,7 +2,7 @@
   "name": "test-components",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "src/index.tsx",
   "author": "Nikita Salikov",
   "license": "ISC",
   "type": "module",
