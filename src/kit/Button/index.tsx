@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { css, cx } from '@linaria/core';
-// import { IButton } from './types';
+import { IButton } from './types';
 import { CONFIG } from './config';
 
 export const classNames = {
@@ -74,22 +74,14 @@ export const classNames = {
   `,
 };
 
-export const Button: FC = ({
-  // @ts-ignore
+export const Button: FC<IButton> = ({
   id,
-  // @ts-ignore
   onClick,
-  // @ts-ignore
   color = 'primary',
-  // @ts-ignore
   size = 'medium',
-  // @ts-ignore
   type = 'button',
-  // @ts-ignore
   disabled = false,
-  // @ts-ignore
   tabIndex = 1,
-  // @ts-ignore
   className,
   children,
 }) => (

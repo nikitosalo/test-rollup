@@ -1,1 +1,2 @@
-export {Button} from './kit/Button/index'
+export {Button} from './kit/Button'
+export {TestComponent} from './kit/TestComponent';
