@@ -29,13 +29,13 @@ export default {
     dir: 'dist',
   },
   plugins: [
+    linaria(),
+    css({ output: 'styles.css' }),
     commonjs(),
     typescript(),
     terser(),
     resolve(),
     peerDepsExternal(),
-    linaria(),
-    css(),
     // babel(),
   ],
 };
